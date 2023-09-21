@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import bgVideo from '../../public/bg-animation.mp4';
 import keysVid from '../assets/keys-vid.mp4';
-import keysHeroImg from '../assets/19keys-two.jpeg';
+import keysHeroImg from '../../public/19keys-two.jpeg';
 import Footer from '../components/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
