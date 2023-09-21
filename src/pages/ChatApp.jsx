@@ -75,7 +75,7 @@ useEffect(() => {
 
     try {
         // 2. Fetch bot reply from the API
-        const botReply = await fetch('https://www.huemanservices.com/keysai', {
+        const botReply = await fetch('https://www.thehueman.io/gptans', {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
