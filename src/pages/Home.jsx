@@ -4,9 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsArrowDown, BsArrowRight, BsArrowUpRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import bgVideo from '../../public/bg-animation.mp4';
-import keysVid from '../assets/keys-vid.mp4';
-import keysHeroImg from '../../public/19keys-two.jpeg';
+import bgVideo from '../../public/assets/bg-animation.mp4';
+import keysVid from '../../public/assets/keys-vid.mp4'
+import keysHeroImg from '../../public/assets/19keys-two.jpeg';
 import Footer from '../components/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
