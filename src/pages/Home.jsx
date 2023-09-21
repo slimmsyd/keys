@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsArrowDown, BsArrowRight, BsArrowUpRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import bgVideo from '../assets/bg-animation.mp4';
+import bgVideo from '../../public/bg-animation.mp4';
 import keysVid from '../assets/keys-vid.mp4';
 import keysHeroImg from '../assets/19keys-two.jpeg';
 import Footer from '../components/Footer';
