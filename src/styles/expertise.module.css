@@ -190,7 +190,9 @@ body #cdawrap {
 	grid-column-gap: 7vw;
 	grid-row-gap: 0.5rem;
 }
-
+.project h1 {
+	color: #fff;
+}
 .project_intro {
 	grid-template-columns: 1fr;
 	grid-template-areas: 'label-name' 
@@ -833,3 +835,148 @@ body #cdawrap {
 	    justify-self: end;
 	}
 }
+
+
+
+/* PI GRAPH STYLING  */
+/* PI GRAPH STYLING  */
+/* PI GRAPH STYLING  */
+.pie{
+	margin: 10px; /* This will create a 10px spacing between the inner circle and the pie slices */
+
+}
+.pi_chart_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value based on your needs */
+}
+
+.pi_container {
+    height: 150px;
+    position: relative;
+}
+
+.pi_background {
+    position: absolute;
+
+    width: 270px;  /* Increased from 150px */
+    height: 270px; /* Increased from 150px */
+    border-radius: 100%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    background: conic-gradient(
+        #1b458b 0% 30%, 
+        #0a0 30% 60%, 
+        #f80 60% 90%, 
+        #08f 90% 100%
+    );
+}
+
+.innerCircle {
+    position: absolute;
+	width: 190px;  /* Increased from 120px */
+    height: 190px; /* Increased from 120px */
+    background-color: #444;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+    color: white;
+    padding: 10px; /* Padding added here */
+    box-sizing: border-box;
+}
+
+.innerCircle .content {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* New Layer Pie Slices */
+.newLayer {
+    position: absolute;
+    width: 130px;  /* Smaller than the existing pie slices */
+    height: 130px; /* Smaller than the existing pie slices */
+    border-radius: 100%;
+    clip: rect(0px, 65px, 130px, 0px); /* Adjusted for the smaller size */
+}
+
+.newLayerPie {
+    transition: all 1s;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    clip: rect(0px, 65px, 130px, 0px);
+    margin: 10px; /* Spacing between the new layer and the existing slices */
+}
+
+
+.newLayerSliceOne .newLayerPie {
+    background-color: #ff9999; /* New color for the slice */
+    transform: rotate(30deg);
+}
+
+/* Add styles for other slices as needed */
+
+
+/* PI GRAPH STYLING  */
+
+
+
+
+
+
+
+/* TOUR IMAGE STYLING  */
+
+.tour_wrapper{
+	
+	padding: 0rem 3rem;
+	display: flex;
+}
+
+.tour_container{
+
+	height: 350px;
+	width: 400px;
+
+
+}
+.tour_image_container img {
+	height: 650px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.tour_contents_wrapper{
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
+.link_btn{
+
+	background: #fff;
+	color: black !important;
+	padding: 10px 20px;
+	border-radius: 5px;;
+
+}
+.tour_header{
+	font-size: calc(16px + 5vw);
+	color: #fff;
+}
+
+.expertise-container {
+	
+}
+
+
+/* TOUR IMAGE STYLING  */

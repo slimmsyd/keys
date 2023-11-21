@@ -8,6 +8,7 @@ import bgVideo from '../assets/bg-animation.mp4';
 import keysVid from '../assets/keys-vid.mp4';
 import keysHeroImg from '../assets/19keys-two.jpeg';
 import Footer from '../components/Footer';
+import '../index.css'
 
 gsap.registerPlugin(ScrollTrigger);
 

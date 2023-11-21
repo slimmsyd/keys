@@ -8,7 +8,7 @@ import Education from './pages/Education';
 import ChatApp from './pages/ChatApp';
 import HighLevelConversation from './pages/HighLevelConversation';
 import Expertisesecond from './pages/Expertise';
-import './index.css'
+import Tour from './pages/Tour';
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
       <Route path='/keys/expertise' element={<Expertisesecond />} />
       <Route path='/keys/booking' element={<Booking />} />
       <Route path = "/keys/chat" element = {<ChatApp />} />
+      <Route path = "/keys/tour" element = {<Tour />} />
     </Routes>
   );
 }
