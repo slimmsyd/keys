@@ -130,28 +130,35 @@ const Home = () => {
           ref={rateSection}
           className="rate-section mt-[100vh] pt-[8em] pb-8 px-8 w-full h-screen bg-black flex items-center justify-center flex-col gap-[4em] z-[100] lg:pt-[unset]">
           <h1 ref={rateTitle} className="text-center text-[calc(16px_+_2.5vw)] font-['Cinzel'] text-white font-thin italic lg:w-3/4">
-            "One of the leading voices and groundbreaking entrepreneurs of our generation."
+            "The People Of The Most Influence, Have The Least Wealth." - 19keys
           </h1>
-          {/* <div ref={bookingRatesContainer} className="flex items-center justify-center flex-col gap-[calc(2em_+_4em)] md:flex-row">
+          <div ref={bookingRatesContainer} className="flex items-center justify-center flex-col gap-[calc(2em_+_4em)] md:flex-row">
             <div className="flex items-center justify-center flex-col gap-2">
-              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Online Event Rate</span>
+              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Youtube</span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
-                $<span className="booking-price">5</span>k+
+                <span className="booking-price">148</span>k
               </p>
             </div>
             <div className="flex items-center justify-center flex-col gap-2">
-              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Panel Rate</span>
+              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Instagram</span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
-                $<span className="booking-price">11</span>k+
+                <span className="booking-price">193</span>k
               </p>
             </div>
             <div className="flex items-center justify-center flex-col gap-2">
-              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Conference Rate</span>
+              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Twitter</span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
-                $<span className="booking-price">19</span>k+
+                <span className="booking-price">93.7</span>k
               </p>
             </div>
-          </div> */}
+
+            <div className="flex items-center justify-center flex-col gap-2">
+              <span className="text-center text-[calc(16px_+_.25vw)] text-white font-['Cinzel'] font-thin">Tiktok</span>
+              <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
+                <span className="booking-price">95.9</span>k
+              </p>
+            </div>
+          </div>
         </section>
         {/* ABOUT SECTION */}
         <section
