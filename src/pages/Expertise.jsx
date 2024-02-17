@@ -7,6 +7,8 @@ import keysEyl from '../assets/keys-eyl.jpeg'
 import royalKeys from '../assets/19keys.jpeg'
 import keysFullEyl from '../assets/keys-full-eyl.jpeg'
 import Footer from '../components/Footer';
+import FooterBanner from '../components/footerBanner'
+
 
 const Expertise = () => {
     const expertiseSection = useRef();
@@ -113,6 +115,10 @@ const Expertise = () => {
               </div>
           </section>
       </main>
+
+
+      <FooterBanner />
+
       <Footer />
     </>
   )

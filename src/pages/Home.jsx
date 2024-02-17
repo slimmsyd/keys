@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import bgVideo from "../assets/bg-animation.mp4";
 import keysVid from "../assets/keys-vid.mp4";
+import genVid from "../assets/Gen_PAGE.mp4";
 import keysHeroImg from "../assets/19keys-two.jpeg";
-import Footer from "../components/Footer";
+import FooterBanner from '../components/footerBanner'
+import Footer from '../components/Footer'
 import "../index.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,6 +21,31 @@ const Home = () => {
   const rateTitle = useRef();
   const bookingRatesContainer = useRef();
   const aboutSection = useRef();
+
+
+  const textLines = [
+    "WHAT YOU DO",
+    "FREQUENTLY",
+    "DO",
+    "BECOMES YOUR",
+    "FREQUENCY"
+  ];
+
+  const renderBanner = (texts, rep) => { 
+
+    return (
+      <>
+        {texts.map((text, index) => (
+          <div key={index} className="flex-row">
+            <span className="white-line"></span>
+            <p>{text}</p>
+            <span className="white-line"></span>
+          </div>
+        ))}
+      </>
+    );
+  };
+
 
   useEffect(() => {
     const homeTimeline = gsap.timeline();
@@ -165,7 +192,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center justify-center flex-col gap-2">
-            <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
+              <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
                 Instagram
               </span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
@@ -173,7 +200,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center justify-center flex-col gap-2">
-            <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
+              <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
                 Twitter
               </span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
@@ -182,7 +209,7 @@ const Home = () => {
             </div>
 
             <div className="flex items-center justify-center flex-col gap-2">
-            <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
+              <span className="text-center text-[calc(16px_+_.25vw)] text-custom-yellow font-['Cinzel'] font-thin">
                 Tiktok
               </span>
               <p className="text-center text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-thin">
@@ -301,6 +328,11 @@ const Home = () => {
             .
           </h1>
         </section>
+
+      <FooterBanner
+        video  = {genVid}
+      />
+
         <Footer />
       </main>
     </>
