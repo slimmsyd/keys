@@ -8,6 +8,7 @@ import KeysImage from '../assets/19Keys_Asci.png';
 import KeysImage2 from '../assets/19Keys_asci2.png';
 import KeysImage3 from '../assets/19Keys_Asci3.png';
 import ChatVideo from '../assets/AfricanMoorishVid.mp4'
+import MoorVideo from '../assets/MoorVideo.mp4'
 
 import { gsap } from 'gsap';
 
@@ -169,7 +170,7 @@ useEffect(() => {
             >
               <source
                 className="absolute inset-0 w-full h-full"
-                src={ChatVideo}
+                src={MoorVideo}
                 type="video/mp4"
               />
             </video>
