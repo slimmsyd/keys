@@ -7,7 +7,17 @@ import Footer from '../components/Footer';
 import KeysImage from '../assets/19Keys_Asci.png';
 import KeysImage2 from '../assets/19Keys_asci2.png';
 import KeysImage3 from '../assets/19Keys_Asci3.png';
+import ChatVideo from '../assets/AfricanMoorishVid.mp4'
+
+import { gsap } from 'gsap';
+
 export default function ChatApp() { 
+  const chatSection = useRef();
+
+  useEffect(() => {
+    const homeTimeline = gsap.timeline();
+  homeTimeline.fromTo(chatSection.current, { opacity: 0 }, { opacity: 1, duration: 4 });
+  }, [])
 
     const [message, setMessage] = useState("")
     const [responses, setResponses] = useState([])
@@ -113,7 +123,9 @@ useEffect(() => {
 
 
 
-      <div className={styles.app_container}>
+      <div
+      ref =  {chatSection}
+      className={styles.app_container}>
 
 
           {/* <div ref = {loading_div} className ={`${styles.loading_container} ${fadeOut ? styles.fade_out: ''} ${displayNone ? styles.displayNone : ''}`}>
@@ -141,7 +153,26 @@ useEffect(() => {
 
           <div ref = {chat_selection} className = {styles.chat_selection}>
 
-         
+          <div class="opacity-bg">
+
+          <h1 className="hero-title no-translate text-[calc(16px_+_2vw)] leading-[1em] text-white font-['Cinzel'] font-bold translate-x-[calc(12px_+_-4vw)] translate-y-[calc(12px_+_2vw)] z-[99]">
+            MIND OF
+          </h1>
+          </div>
+
+          <video
+              className="relative w-full h-full  object-cover lg:w-[100%]"
+              loop
+              muted
+              autoPlay
+              playsInline
+            >
+              <source
+                className="absolute inset-0 w-full h-full"
+                src={ChatVideo}
+                type="video/mp4"
+              />
+            </video>
 
           </div>
 
@@ -204,11 +235,31 @@ useEffect(() => {
 
 
           <div className = {styles.chat_guidelines}>
-          <img src = {KeysImage} />
+          {/* <img src = {KeysImage} />
           <img src = {KeysImage2} />
           <img src = {KeysImage3} />
-           
+            */}
 
+<div class="opacity-bg">
+<h1 className="hero-title no-translate text-[calc(16px_+_2vw)] leading-[1em] text-white font-['Cinzel'] font-bold translate-x-[calc(12px_+_-4vw)] translate-y-[calc(12px_+_2vw)] z-[99]">
+           KEYS
+          </h1>
+
+</div>
+
+            <video
+              className="relative w-full h-full  object-cover lg:w-[100%]"
+              loop
+              muted
+              autoPlay
+              playsInline
+            >
+              <source
+                className="absolute inset-0 w-full h-full"
+                src={ChatVideo}
+                type="video/mp4"
+              />
+            </video>
 
 
           </div>

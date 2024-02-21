@@ -13,6 +13,9 @@ const HighLevelConversation = () => {
       const homeTimeline = gsap.timeline();
     homeTimeline.fromTo(hlcSection.current, { opacity: 0 }, { opacity: 1, duration: 4 });
     }, [])
+
+
+    
   return (
     <>
       <main 
