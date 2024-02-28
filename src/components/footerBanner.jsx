@@ -52,7 +52,7 @@ const footerBanner = ({video}) => {
 
             </div>
             <video
-              className="relative w-full h-[calc(18em_+_24em)]  object-cover lg:w-[100%]"
+              className="relative w-full h-[100vh]  object-cover lg:w-[100%]"
               loop
               muted
               autoPlay

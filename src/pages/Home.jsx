@@ -259,7 +259,7 @@ const Home = () => {
         <section className="highLevel-section w-full py-12 h-auto px-8 flex items-center justify-center flex-col bg-black z-[100]">
           <div className="w-full flex items-center justify-center flex-col gap-10 lg:flex-row lg:gap lg:col-span-3 lg:items-start">
             <div className="w-full border-b border-[#ffffff6d] flex items-start justify-center flex-col gap-4 pb-[6em] lg:border-b-0 lg:border-r lg:border-[#ffffff6d] lg:pt-16 lg:px-16 lg:w-[33%]">
-              <div>
+            <div className = "text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
                   High Level Conversations
                 </h1>
@@ -278,7 +278,7 @@ const Home = () => {
               </p>
             </div>
             <div className="w-full border-b border-[#ffffff6d] flex items-start justify-center flex-col gap-4 pb-[6em] lg:border-b-0 lg:border-r lg:border-[#ffffff6d] lg:pt-16 lg:px-16 lg:w-[33%]">
-              <div>
+            <div className = "text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
                   Technology Analyst
                 </h1>
@@ -296,9 +296,9 @@ const Home = () => {
               </p>
             </div>
             <div className="w-full flex items-start justify-center flex-col gap-4 lg:pb-[6em] lg:pt-16 lg:px-16 lg:w-[33%]">
-              <div>
+              <div className = "text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
-                  Public Speaker
+                  Grand Public Speaker
                 </h1>
                 <Link
                   to="/keys/booking"

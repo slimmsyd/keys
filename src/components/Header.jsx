@@ -93,6 +93,7 @@ const Header = () => {
         <Link 
           to="/keys/chat"
           target='_blank'
+          style = {{cursor: "pointer"}}
           className="text-[calc(12px_+_2.75vw)] text-white font-['Cinzel'] transition duration-300 ease-in-out hover:text-white">
           Chat
         </Link>
@@ -134,6 +135,7 @@ const Header = () => {
 
         <Link
           to="/keys/chat"
+          style = {{cursor: "pointer"}}
           className="text-[calc(8px_+_.75vw)] text-[#ffffffc4] font-['Cinzel'] transition duration-300 ease-in-out hover:text-white">
           Chat
         </Link>

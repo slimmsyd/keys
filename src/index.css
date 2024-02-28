@@ -11,7 +11,7 @@
 }
 
 svg {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 body {
@@ -48,6 +48,8 @@ body {
 
 .arrow-right {
   animation: arrow 2s ease-in-out infinite;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 @keyframes arrow {
@@ -924,6 +926,7 @@ body #cdawrap {
 /* HOME PAGE ADDITION */
 .video-container {
   position: relative;
+  height: 100vh;
 }
 .about-section {
   position: relative;
@@ -980,5 +983,12 @@ white-space: pre;
 	width: 20px;
 	position: relative;
 	display: block;
+}
+
+
+
+.text-header-div
+{
+  height: 100px;
 }
 /* HOME PAGE ADDITION */

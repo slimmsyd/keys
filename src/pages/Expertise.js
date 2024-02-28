@@ -10,6 +10,7 @@ import Keys from "../../src/assets/19keys.jpeg";
 import Keys2 from "../../src/assets/19Keys_2.jpeg";
 import preloadImages from "../components/ScrollAnimation/utils";
 import { ScrollTrigger } from "gsap/all";
+import genVid from "../assets/Gen_PAGE.mp4";
 import PieChart from "../components/PieChart";
 import FooterBanner from '../components/footerBanner'
 
@@ -389,8 +390,9 @@ const Expertisesecond = () => {
 
       </div>
 
-      <FooterBanner />
-
+      <FooterBanner
+        video  = {genVid}
+      />
     <Footer />
 
     </>

@@ -20,7 +20,7 @@ export default function ChatApp() {
   homeTimeline.fromTo(chatSection.current, { opacity: 0 }, { opacity: 1, duration: 4 });
   }, [])
 
-    const [message, setMessage] = useState("")
+    const [message, setMessage] = useState("TESTING TESTIN")
     const [responses, setResponses] = useState([])
     const chatInput = useRef()
     const btnSubmit = useRef();
