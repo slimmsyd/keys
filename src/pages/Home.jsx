@@ -8,8 +8,8 @@ import bgVideo from "../assets/bg-animation.mp4";
 import keysVid from "../assets/keys-vid.mp4";
 import genVid from "../assets/Gen_PAGE.mp4";
 import keysHeroImg from "../assets/19keys-two.jpeg";
-import FooterBanner from '../components/footerBanner'
-import Footer from '../components/Footer'
+import FooterBanner from "../components/footerBanner";
+import Footer from "../components/Footer";
 import "../index.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,17 +22,15 @@ const Home = () => {
   const bookingRatesContainer = useRef();
   const aboutSection = useRef();
 
-
   const textLines = [
     "WHAT YOU DO",
     "FREQUENTLY",
     "DO",
     "BECOMES YOUR",
-    "FREQUENCY"
+    "FREQUENCY",
   ];
 
-  const renderBanner = (texts, rep) => { 
-
+  const renderBanner = (texts, rep) => {
     return (
       <>
         {texts.map((text, index) => (
@@ -45,7 +43,6 @@ const Home = () => {
       </>
     );
   };
-
 
   useEffect(() => {
     const homeTimeline = gsap.timeline();
@@ -221,13 +218,13 @@ const Home = () => {
         {/* ABOUT SECTION */}
         <section
           ref={aboutSection}
-          className="about-section pb-[4em] px-8 w-full h-[auto] flex items-center justify-center flex-col-reverse bg-black z-[100] lg:flex-row lg:items-start lg:justify-between lg:px-[6em]"
+          className="about-section pb-[4em] px-8 w-full h-[auto] flex items-center justify-center flex-col-reverse bg-black z-[100] lg:flex-column lg:items-center lg:justify-between lg:px-[6em]"
         >
-          <div className="lg:w-1/2">
-            <h1 className="w-full pt-8 text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-bold">
+          <div className="lg:w-1/2 flex flex-col justify-center items-center pt-8">
+          <h1 className="w-full pt-8 text-[calc(16px_+_1vw)] text-white font-['Cinzel'] font-bold text-center">
               19Keys
             </h1>
-            <p className="w-full py-4 px-1.2 text-[calc(16px_+_.25vw)] text-white font-['Source Sans Pro'] font-thin lg:w-3/4">
+            <p className="w-full py-4 px-1.2 text-[calc(16px_+_.25vw)] text-white font-['Source Sans Pro'] font-thin lg:w-4/4 text-center">
               Guided by the mantra of 'Slaveship to Ownership', he emerges as a
               Global Thought Leader and a pioneering force in Web 3, Business,
               Mindset, Holistic Wealth, Tech, Metaphysics, and Financial
@@ -235,14 +232,14 @@ const Home = () => {
               embark on a journey of self-discovery and limitless growth.
             </p>
             <Link to="/keys/expertise" className="flex items-center gap-4">
-              <button className="text-[calc(16px_+_.20vw)] text-white font-['Cinzel'] font-semibold">
+              <button className="text-[calc(16px_+_.20vw)] text-white font-['Cinzel']  font-semibold">
                 Learn More
               </button>
               <BsArrowRight className="arrow-right text-[calc(16px_+_.25vw)] text-white" />
             </Link>
           </div>
           <video
-            className="relative w-full h-[calc(18em_+_24em)] rounded-[2em] object-cover lg:w-[60%]"
+            className="relative w-full h-[calc(18em_+_24em)] rounded-[2em] object-cover lg:w-[100%]"
             loop
             muted
             autoPlay
@@ -259,7 +256,7 @@ const Home = () => {
         <section className="highLevel-section w-full py-12 h-auto px-8 flex items-center justify-center flex-col bg-black z-[100]">
           <div className="w-full flex items-center justify-center flex-col gap-10 lg:flex-row lg:gap lg:col-span-3 lg:items-start">
             <div className="w-full border-b border-[#ffffff6d] flex items-start justify-center flex-col gap-4 pb-[6em] lg:border-b-0 lg:border-r lg:border-[#ffffff6d] lg:pt-16 lg:px-16 lg:w-[33%]">
-            <div className = "text-header-div">
+              <div className="text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
                   High Level Conversations
                 </h1>
@@ -278,7 +275,7 @@ const Home = () => {
               </p>
             </div>
             <div className="w-full border-b border-[#ffffff6d] flex items-start justify-center flex-col gap-4 pb-[6em] lg:border-b-0 lg:border-r lg:border-[#ffffff6d] lg:pt-16 lg:px-16 lg:w-[33%]">
-            <div className = "text-header-div">
+              <div className="text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
                   Technology Analyst
                 </h1>
@@ -296,7 +293,7 @@ const Home = () => {
               </p>
             </div>
             <div className="w-full flex items-start justify-center flex-col gap-4 lg:pb-[6em] lg:pt-16 lg:px-16 lg:w-[33%]">
-              <div className = "text-header-div">
+              <div className="text-header-div">
                 <h1 className="text-[calc(16px_+_.5vw)] text-white font-['Cinzel'] font-semibold">
                   Grand Public Speaker
                 </h1>
@@ -329,9 +326,7 @@ const Home = () => {
           </h1>
         </section>
 
-      <FooterBanner
-        video  = {genVid}
-      />
+        <FooterBanner video={genVid} />
 
         <Footer />
       </main>
